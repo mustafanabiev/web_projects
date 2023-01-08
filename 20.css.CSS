@@ -1,0 +1,49 @@
+body{
+	background-color: blue;
+}
+@media screen and (min-width: 50px ) and (max-width: 400px) {
+	.a{
+		font-size: 50px; 
+		background-color: red;
+		
+
+	}
+	.b{
+		display: none;
+	  }
+	  .c{
+	  	display: none;
+	  }
+	}
+	@media screen and (max-width: 900px  ) and (min-width:400px ) {  
+	.b{
+		font-size: 50px; 
+		background-color: yellow;
+		
+	}
+	.a{
+		display: none;
+	  }
+	.c{
+		display: none;
+
+	}
+
+	}
+	@media screen and (min-width:900px  ) {  
+	.c{
+		font-size: 50px; 
+		background-color: pink;
+		
+
+	}
+	.a{
+		display: none;
+	}
+	.b{
+		display: none;
+	}
+
+}
+	
+  

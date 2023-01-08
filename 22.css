@@ -1,0 +1,63 @@
+.my-class{
+	width: 10px;
+	animation-name:my-animation;
+	animation-iteration-count: infinite;
+	animation-duration: 2s;
+}
+@keyframes my-animation {
+	0%{
+				left: 0px ;
+				top: 0px ;
+				transform: translate(0%,0%);
+
+				
+				  
+
+			}
+			25%{
+				left:  100%;
+				top:  0px;
+				transform: translate(-100%,0%);
+
+				
+				  
+
+			}
+			50%{
+				left: 100% ;
+				top:  100%;
+				transform: translate(-100%,-100%);
+				
+			}
+			75%{
+				left:  0px;
+				top:  100%;
+				transform: translate(0%,-100%);
+
+				
+
+
+			}
+			100%{
+				left:  0px;
+				top:  0px;
+				transform: translate(0%,0%);
+
+}
+.a{ position: relative;
+	width: 900px;
+	height: 800px;
+	color: red;
+	border: 10px solid blue;
+
+}
+.b{
+	position: absolute;
+	width: 300px;
+	height: 300px;
+	border-radius: 100%; 
+	background-color: green;
+	animation-name: my-animation ;
+	animation-iteration-count: infinite;
+	animation-duration: 2s;  
+}

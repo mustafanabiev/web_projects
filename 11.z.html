@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link href="https://fonts.googleapis.com/css?family=Electrolize|Oswald&display=swap" rel="stylesheet"><!-- это стиль текста -->
+	<style type="text/css">
+		h1{
+			color: green;
+		}                     
+		h1:hover{ 
+			color: red;  
+			transition: 1s color,1s green; 
+		}
+		.a{
+			background-color: black;
+			width: 100px;
+			height: 350px;
+			margin-top:4px;
+			border-top: 100px;
+			padding: 10px;
+			overflow: hidden;
+		}
+		.b{
+			 
+			background-color: red;
+	}
+		.c{
+			
+			background-color:yellow;
+				
+		}
+		.d{
+			
+			background-color:green;
+		}
+		.m{
+			position: absolute; 
+			font-family: 'Electrolize', sans-serif;
+			top: 50%;
+			left: 50%;            
+			transform: translate(-50%,-50%);
+
+		}
+		.inform{
+			position: relative;
+			height: 100px;
+			width: 100px;
+			border-radius: 100%;
+			margin-top: 10px;
+			font-size: 70px;
+
+		}
+
+	</style>
+
+</head>
+<body>
+	<div class="a">
+
+		<div id="red1" class=" inform">
+			
+		</div>
+
+	<div id="yellow1" class="c inform">
+		<span style="color: red" class="m" >
+			15
+		</span>
+	</div>
+	<div id="green1" class="d inform"></div>
+
+	</div>
+
+
+
+	<div class="a">
+
+		<div id="red2" class="b inform">
+			
+		</div>
+
+	<div id="yellow2"  class="c inform">
+		<span style="color: red" class="m" >
+			15
+		</span>
+	</div>
+	<div  id="green2" class=" inform"></div>
+
+	</div>
+
+
+	<script type="text/javascript">
+		
+
+		const numbers = document.getElementsByClassName('m');
+		const reds = [document.getElementById('red1'), document.getElementById('red2')];
+		const yellows = [document.getElementById('yellow1') , document.getElementById('yellow2')];
+		const greens = [document.getElementById('green1'), document.getElementById('green2')];
+
+		let asan;
+		let color = 2;
+		let musi = 2;
+		let pusi = 5;
+
+		const it = () => {
+			numbers[0].innerText--;
+			numbers[1].innerText--;
+			numbers[0].innerText == pusi;
+
+
+			
+					
+
+			if (numbers[0].innerText < 0) {
+				numbers[0].innerText = 15;
+				numbers[1].innerText = 15;
+				numbers[0].innerText == pusi;
+
+				if (color === 1) {
+					color = 2;
+					reds[0].classList.remove('b')
+					greens[1].classList.remove('d')
+					reds[1].classList.add('b')
+					greens[0].classList.add('d')
+
+					
+					
+
+			} else   {
+					color = 1;
+					reds[0].classList.add('b')
+					greens[1].classList.add('d')
+					reds[1].classList.remove('b')
+					greens[0].classList.remove('d')
+			}
+
+
+
+			}
+			
+		}
+		setInterval(it , 500);
+		const it1 = () => {
+			if (numbers[0].innerText == 5 && numbers[0].innerText == 3 && numbers[0].innerText == 1 ) {
+					yellows[0].classList.remove('c')
+					yellows[1].classList.remove('c')
+
+			}
+			else{
+					yellows[0].classList.add('c')
+					yellows[1].classList.add('c')
+
+			}
+			setInterval(it1 , 500);
+		}
+	</script>
+</body>
+</html>

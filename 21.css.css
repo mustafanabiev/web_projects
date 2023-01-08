@@ -1,0 +1,75 @@
+body{
+	background-color: rgb(33,254,251);
+}
+.a{
+	 
+	width: 600px;
+	
+	background-color:white;
+	padding: 15px;
+	border: 2px solid black;
+}
+.b{
+	font-size: 20px;
+	margin-left: 100px;
+}
+.c{
+	display: inline-block;
+	margin: 20px;
+}
+
+.row {
+	width: 100%;
+	margin:  15px;
+}
+
+.column-left {
+	width: 48%;
+	display: inline-block;
+	text-align: right;
+}
+
+.column-right {
+	width: 48%;
+	display: inline-block;
+	text-align: left;
+} 
+
+.n{
+	background-color: blue;
+	padding: 10px;
+}
+	
+@media screen and (min-width: 50px) and (max-width: 800px){
+	.row{
+		text-align: left;
+		display: block;
+		
+	}
+	.column-left{
+		text-align: left;
+		display: block;
+		width: 50px;
+
+	}
+	.column-right{
+		text-align: left;
+		display: block;
+		width: 200px;
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+	
+
+
+

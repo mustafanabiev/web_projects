@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		
+		.a{
+			position: relative;
+			color: red;
+			font-size: 50px;
+			background-color: blue;
+			display: /*inline-*/block;
+			/*margin-left:  800px;*/
+			text-align: center;
+		}
+		.a:hover .b{
+			background-color:  white;
+			height: 200px;
+
+
+		}
+		.b{
+
+			position: absolute;
+			top: 100%;
+			height: 0px;
+			transition: 1s height;
+			left: 50%;
+			overflow: hidden;
+			transform: translate(-50%,0%);
+
+
+		}
+
+
+
+	</style>
+
+</head>
+<body>
+	<a class="a" href="b">O нас	
+		
+			<div class="b">
+		Hello<br>
+		About<br>
+		us
+	</div>
+
+			
+		
+		</a> 
+		
+	
+
+</body>
+</html>

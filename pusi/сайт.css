@@ -1,0 +1,136 @@
+body{
+	margin: 0px;
+	background-color: #82FFFC;
+}
+.contoner{
+	width: 100%;
+	height: 30px;
+	background-color: black;
+}
+
+
+.o{
+	margin-top: 40px;
+	margin-left: 20px;
+	
+
+}
+.word{
+	
+	font-size: 14px;
+	color:  green;
+	padding-top: 10px;
+	margin-left: 20px;
+	display: inline-block;
+
+}
+.word1{
+	margin-left: 470px;
+	display: inline-block;
+
+}
+.first{
+	color: white;
+}
+.first:hover{
+	color: #FF14D0;
+	cursor: pointer;
+}
+.backgraund1{
+	margin-top: 2px;
+	border:3px solid red;
+	background-color: blue;
+}
+
+.fon{
+	width: 100px;
+	height: 100px;
+	border: 2px solid red;
+	display: inline-block;
+	margin-left: 50%;
+	margin-top: 10px;
+	transform: translate(-50% , 0);
+}
+.fon1{
+	width: 50px;
+	height: 50px;
+	animation-name:my-animation;
+	animation-iteration-count: infinite;
+	animation-duration: 2s;    
+
+	
+}
+
+@keyframes my-animation {
+			0%{
+				left: 0px ;
+				top: 0px ;
+				transform: translate(0%,0%);
+
+				
+				  
+
+			}
+			25%{
+				left:  100%;
+				top:  0px;
+				transform: translate(100%,0%);
+
+				
+				  
+
+			}
+			50%{
+				left: 100% ;
+				top:  100%;
+				transform: translate(100%,100%);
+				
+			}
+			75%{
+				left:  0px;
+				top:  100%;
+				transform: translate(0%,100%);
+
+				
+
+
+			}
+			100%{
+				left:  0px;
+				top:  0px;
+				transform: translate(0%,0%);
+			}
+
+}
+h1{
+	color: #FF0FFF;
+	width: 400px;
+	height: 40px;
+	background-color: yellow;
+	
+
+}
+.container{
+	width: 200px;
+	height: 250px;
+	border:3px solid red;
+	margin-top: 5px;
+	display: inline-block;
+
+}	
+.information{
+	font-size: 20px;
+	margin-bottom:50px;
+	color:#4800FF;
+}	
+.img1{
+	width: 150px;
+	height: 180px;
+	margin-top:10px;
+}
+.img1:hover{
+	cursor: pointer;
+	transform:scale(.9 , .9);
+	transition: 1s;
+}	
+

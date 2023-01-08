@@ -1,0 +1,172 @@
+body{
+	margin: 0px;
+	background-color: #00FFFF;
+}
+.instagram{ 
+	position: fixed;
+	width: 75px;
+	height: 75px;
+	bottom: 20px;
+	right: 10px;
+	border-radius: 100%;
+	transition: 2s;
+	opacity: 60%;
+	
+
+
+
+}
+.instagram:hover {
+	box-shadow: 5px 5px 10px yellow; 
+	cursor: pointer;
+	border-radius: 100%;
+	transform: rotate(360deg);
+	opacity: 100%;
+
+
+}
+
+.contoner{
+	width: 100%;
+	height: 30px;
+	background-color: black;
+}
+
+
+.o{
+	margin-top: 40px;
+	margin-left: 20px;
+	
+
+}
+.word{
+	
+	font-size: 14px;
+	color:  green;
+	padding-top: 10px;
+	margin-left: 20px;
+	display: inline-block;
+
+}
+.word1{
+	margin-left: 470px;
+	display: inline-block;
+
+}
+.first{
+	color: white;
+}
+.first:hover{
+	color: #FF14D0;
+	cursor: pointer;
+}
+.backgraund1{
+	margin-top: 2px;
+	border:3px solid red;
+	background-color: blue;
+}
+
+.fon{
+	width: 100px;
+	height: 100px;
+	border: 2px solid red;
+	display: inline-block;
+	margin-left: 50%;
+	margin-top: 10px;
+	transform: translate(-50% , 0);
+}
+.fon1{
+	width: 50px;
+	height: 50px;
+	animation-name:my-animation;
+	animation-iteration-count: infinite;
+	animation-duration: 2s;    
+
+	
+}
+
+@keyframes my-animation {
+			0%{
+				left: 0px ;
+				top: 0px ;
+				transform: translate(0%,0%);
+
+				
+				  
+
+			}
+			25%{
+				left:  100%;
+				top:  0px;
+				transform: translate(100%,0%);
+
+				
+				  
+
+			}
+			50%{
+				left: 100% ;
+				top:  100%;
+				transform: translate(100%,100%);
+				
+			}
+			75%{
+				left:  0px;
+				top:  100%;
+				transform: translate(0%,100%);
+
+				
+
+
+			}
+			100%{
+				left:  0px;
+				top:  0px;
+				transform: translate(0%,0%);
+			}
+
+}
+h1{
+	color: #FF0FFF;
+	width: 400px;
+	height: 80px;
+	background-color: yellow;
+	
+
+}
+.container0{
+	width: 1000px;
+	height: auto;
+	
+}
+
+.container{
+	width: 200px;
+	height: 250px;
+	border:3px solid red;
+	margin-top: 15px;
+	margin-right: 20px;
+	display: inline-block;
+
+}	
+.information{
+	font-size: 20px;
+	color:#4800FF;
+	
+}
+.information:hover{
+	cursor: pointer;
+	color: red;
+}	
+.img1{
+	width: 150px;
+	height: 180px;
+	margin-top:10px;
+	transition: 1s;
+}
+.img1:hover{
+	cursor: pointer;
+	transform:scale(.9 , .9);
+	
+}	
+
